@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+warp -> protocol on top of arweace for better dx of smarr conteacts
+core 
+caching
+exrtensions
+
+how smartweave contracts work
+1. defome omtotal; state
+2. write logic in fn named handle
+This function defines different actions that can be called on the contract, which manipulate the state. Actions are similar to functions in a normal smart contract or program. Each action will update the state in some way.
+
+A basic handler for a counter that uses the above state might look something like this:
+export function handle(state, action) {
+  if (action.input.function === 'increment') {
+    state.counter += 1
+  }
+  if (action.input.function === 'decrement') {
+    state.counter -= 1
+  }
+  return { state }
+}
+
+3.  to update the contract state, call writeInteraction from the warp sdk
+A basic handler for a counter that uses the above state might look something like this:
+export function handle(state, action) {
+  if (action.input.function === 'increment') {
+    state.counter += 1
+  }
+  if (action.input.function === 'decrement') {
+    state.counter -= 1
+  }
+  return { state }
+}
+
