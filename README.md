@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+tutorial https://dev.to/dabit3/building-full-stack-applications-with-arweave-and-nextjs-28hg
+
+TODO migrate the project to TS
+
 ## Getting Started
 
 First, run the development server:

@@ -1,8 +1,8 @@
 import fs from 'fs'
 
-import { configureWallet, warp } from './configureWarpServer'
+import { configureWallet, warp } from './configureWarpServer.js'
 
-async function deploy(){
+async function deployer(){
     const wallet = await configureWallet()
     const state = fs.readFileSync('state.json', 'utf-8')
     const contractsource = fs.readFileSync('contract.js', 'utf-8')
@@ -22,4 +22,8 @@ async function deploy(){
     console.log('COntract state: ', cachedValue )
     console.log('Tx Id : ', contractTxId);
 }
+function deploy(){
+    deployer()
+}
+
 deploy()
